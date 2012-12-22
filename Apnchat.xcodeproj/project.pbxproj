@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F651E84F1686001000956961 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F651E84E1686001000956961 /* UIKit.framework */; };
+		F651E8511686001000956961 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F651E8501686001000956961 /* Foundation.framework */; };
+		F651E8531686001000956961 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F651E8521686001000956961 /* CoreGraphics.framework */; };
+		F651E8591686001000956961 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F651E8571686001000956961 /* InfoPlist.strings */; };
+		F651E85B1686001000956961 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F651E85A1686001000956961 /* main.m */; };
+		F651E85F1686001000956961 /* ApnchatAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F651E85E1686001000956961 /* ApnchatAppDelegate.m */; };
+		F651E8611686001000956961 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F651E8601686001000956961 /* Default.png */; };
+		F651E8631686001000956961 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F651E8621686001000956961 /* Default@2x.png */; };
+		F651E8651686001000956961 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F651E8641686001000956961 /* Default-568h@2x.png */; };
+		F651E8681686001000956961 /* ApnchatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F651E8671686001000956961 /* ApnchatViewController.m */; };
+		F651E86B1686001000956961 /* ApnchatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F651E8691686001000956961 /* ApnchatViewController.xib */; };
+		F651E8721686002300956961 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F651E8711686002300956961 /* CFNetwork.framework */; };
+		F651E8741686002B00956961 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F651E8731686002B00956961 /* MobileCoreServices.framework */; };
+		F651E8761686003000956961 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F651E8751686003000956961 /* SystemConfiguration.framework */; };
+		F651E8781686003900956961 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F651E8771686003900956961 /* libxml2.dylib */; };
+		F651E87A1686003F00956961 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F651E8791686003F00956961 /* libz.dylib */; };
+		F651E8931686007100956961 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = F651E87D1686007100956961 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F651E8941686007100956961 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = F651E8801686007100956961 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F651E8951686007100956961 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = F651E8821686007100956961 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F651E8961686007100956961 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F651E8841686007100956961 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F651E8971686007100956961 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F651E8861686007100956961 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F651E8981686007100956961 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F651E8881686007100956961 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F651E8991686007100956961 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F651E88C1686007100956961 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F651E89A1686007100956961 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F651E88E1686007100956961 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F651E89B1686007100956961 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F651E8921686007100956961 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F651E84A1686001000956961 /* Apnchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apnchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F651E84E1686001000956961 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F651E8501686001000956961 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F651E8521686001000956961 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F651E8561686001000956961 /* Apnchat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Apnchat-Info.plist"; sourceTree = "<group>"; };
+		F651E8581686001000956961 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F651E85A1686001000956961 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F651E85C1686001000956961 /* Apnchat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Apnchat-Prefix.pch"; sourceTree = "<group>"; };
+		F651E85D1686001000956961 /* ApnchatAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApnchatAppDelegate.h; sourceTree = "<group>"; };
+		F651E85E1686001000956961 /* ApnchatAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApnchatAppDelegate.m; sourceTree = "<group>"; };
+		F651E8601686001000956961 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F651E8621686001000956961 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F651E8641686001000956961 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F651E8661686001000956961 /* ApnchatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApnchatViewController.h; sourceTree = "<group>"; };
+		F651E8671686001000956961 /* ApnchatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApnchatViewController.m; sourceTree = "<group>"; };
+		F651E86A1686001000956961 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ApnchatViewController.xib; sourceTree = "<group>"; };
+		F651E8711686002300956961 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F651E8731686002B00956961 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F651E8751686003000956961 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F651E8771686003900956961 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		F651E8791686003F00956961 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F651E87C1686007100956961 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		F651E87D1686007100956961 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		F651E87E1686007100956961 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		F651E87F1686007100956961 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		F651E8801686007100956961 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		F651E8811686007100956961 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		F651E8821686007100956961 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		F651E8831686007100956961 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		F651E8841686007100956961 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		F651E8851686007100956961 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		F651E8861686007100956961 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		F651E8871686007100956961 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		F651E8881686007100956961 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		F651E8891686007100956961 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		F651E88A1686007100956961 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		F651E88B1686007100956961 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		F651E88C1686007100956961 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		F651E88D1686007100956961 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		F651E88E1686007100956961 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		F651E88F1686007100956961 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		F651E8911686007100956961 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		F651E8921686007100956961 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F651E8471686001000956961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F651E87A1686003F00956961 /* libz.dylib in Frameworks */,
+				F651E8781686003900956961 /* libxml2.dylib in Frameworks */,
+				F651E8761686003000956961 /* SystemConfiguration.framework in Frameworks */,
+				F651E8741686002B00956961 /* MobileCoreServices.framework in Frameworks */,
+				F651E8721686002300956961 /* CFNetwork.framework in Frameworks */,
+				F651E84F1686001000956961 /* UIKit.framework in Frameworks */,
+				F651E8511686001000956961 /* Foundation.framework in Frameworks */,
+				F651E8531686001000956961 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F651E83F1686000F00956961 = {
+			isa = PBXGroup;
+			children = (
+				F651E8791686003F00956961 /* libz.dylib */,
+				F651E8771686003900956961 /* libxml2.dylib */,
+				F651E8751686003000956961 /* SystemConfiguration.framework */,
+				F651E8731686002B00956961 /* MobileCoreServices.framework */,
+				F651E8711686002300956961 /* CFNetwork.framework */,
+				F651E8541686001000956961 /* Apnchat */,
+				F651E84D1686001000956961 /* Frameworks */,
+				F651E84B1686001000956961 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F651E84B1686001000956961 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F651E84A1686001000956961 /* Apnchat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F651E84D1686001000956961 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F651E84E1686001000956961 /* UIKit.framework */,
+				F651E8501686001000956961 /* Foundation.framework */,
+				F651E8521686001000956961 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F651E8541686001000956961 /* Apnchat */ = {
+			isa = PBXGroup;
+			children = (
+				F651E87B1686007100956961 /* AsiHttp */,
+				F651E85D1686001000956961 /* ApnchatAppDelegate.h */,
+				F651E85E1686001000956961 /* ApnchatAppDelegate.m */,
+				F651E8661686001000956961 /* ApnchatViewController.h */,
+				F651E8671686001000956961 /* ApnchatViewController.m */,
+				F651E8691686001000956961 /* ApnchatViewController.xib */,
+				F651E8551686001000956961 /* Supporting Files */,
+			);
+			path = Apnchat;
+			sourceTree = "<group>";
+		};
+		F651E8551686001000956961 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F651E8561686001000956961 /* Apnchat-Info.plist */,
+				F651E8571686001000956961 /* InfoPlist.strings */,
+				F651E85A1686001000956961 /* main.m */,
+				F651E85C1686001000956961 /* Apnchat-Prefix.pch */,
+				F651E8601686001000956961 /* Default.png */,
+				F651E8621686001000956961 /* Default@2x.png */,
+				F651E8641686001000956961 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F651E87B1686007100956961 /* AsiHttp */ = {
+			isa = PBXGroup;
+			children = (
+				F651E87C1686007100956961 /* ASIAuthenticationDialog.h */,
+				F651E87D1686007100956961 /* ASIAuthenticationDialog.m */,
+				F651E87E1686007100956961 /* ASICacheDelegate.h */,
+				F651E87F1686007100956961 /* ASIDataCompressor.h */,
+				F651E8801686007100956961 /* ASIDataCompressor.m */,
+				F651E8811686007100956961 /* ASIDataDecompressor.h */,
+				F651E8821686007100956961 /* ASIDataDecompressor.m */,
+				F651E8831686007100956961 /* ASIDownloadCache.h */,
+				F651E8841686007100956961 /* ASIDownloadCache.m */,
+				F651E8851686007100956961 /* ASIFormDataRequest.h */,
+				F651E8861686007100956961 /* ASIFormDataRequest.m */,
+				F651E8871686007100956961 /* ASIHTTPRequest.h */,
+				F651E8881686007100956961 /* ASIHTTPRequest.m */,
+				F651E8891686007100956961 /* ASIHTTPRequestConfig.h */,
+				F651E88A1686007100956961 /* ASIHTTPRequestDelegate.h */,
+				F651E88B1686007100956961 /* ASIInputStream.h */,
+				F651E88C1686007100956961 /* ASIInputStream.m */,
+				F651E88D1686007100956961 /* ASINetworkQueue.h */,
+				F651E88E1686007100956961 /* ASINetworkQueue.m */,
+				F651E88F1686007100956961 /* ASIProgressDelegate.h */,
+				F651E8901686007100956961 /* Reachability */,
+			);
+			path = AsiHttp;
+			sourceTree = SOURCE_ROOT;
+		};
+		F651E8901686007100956961 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				F651E8911686007100956961 /* Reachability.h */,
+				F651E8921686007100956961 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F651E8491686001000956961 /* Apnchat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F651E86E1686001000956961 /* Build configuration list for PBXNativeTarget "Apnchat" */;
+			buildPhases = (
+				F651E8461686001000956961 /* Sources */,
+				F651E8471686001000956961 /* Frameworks */,
+				F651E8481686001000956961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Apnchat;
+			productName = Apnchat;
+			productReference = F651E84A1686001000956961 /* Apnchat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F651E8411686000F00956961 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Apnchat;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = phylony;
+			};
+			buildConfigurationList = F651E8441686000F00956961 /* Build configuration list for PBXProject "Apnchat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F651E83F1686000F00956961;
+			productRefGroup = F651E84B1686001000956961 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F651E8491686001000956961 /* Apnchat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F651E8481686001000956961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F651E8591686001000956961 /* InfoPlist.strings in Resources */,
+				F651E8611686001000956961 /* Default.png in Resources */,
+				F651E8631686001000956961 /* Default@2x.png in Resources */,
+				F651E8651686001000956961 /* Default-568h@2x.png in Resources */,
+				F651E86B1686001000956961 /* ApnchatViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F651E8461686001000956961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F651E85B1686001000956961 /* main.m in Sources */,
+				F651E85F1686001000956961 /* ApnchatAppDelegate.m in Sources */,
+				F651E8681686001000956961 /* ApnchatViewController.m in Sources */,
+				F651E8931686007100956961 /* ASIAuthenticationDialog.m in Sources */,
+				F651E8941686007100956961 /* ASIDataCompressor.m in Sources */,
+				F651E8951686007100956961 /* ASIDataDecompressor.m in Sources */,
+				F651E8961686007100956961 /* ASIDownloadCache.m in Sources */,
+				F651E8971686007100956961 /* ASIFormDataRequest.m in Sources */,
+				F651E8981686007100956961 /* ASIHTTPRequest.m in Sources */,
+				F651E8991686007100956961 /* ASIInputStream.m in Sources */,
+				F651E89A1686007100956961 /* ASINetworkQueue.m in Sources */,
+				F651E89B1686007100956961 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F651E8571686001000956961 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F651E8581686001000956961 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F651E8691686001000956961 /* ApnchatViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F651E86A1686001000956961 /* en */,
+			);
+			name = ApnchatViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F651E86C1686001000956961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F651E86D1686001000956961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F651E86F1686001000956961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Apnchat/Apnchat-Prefix.pch";
+				INFOPLIST_FILE = "Apnchat/Apnchat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F651E8701686001000956961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Apnchat/Apnchat-Prefix.pch";
+				INFOPLIST_FILE = "Apnchat/Apnchat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F651E8441686000F00956961 /* Build configuration list for PBXProject "Apnchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F651E86C1686001000956961 /* Debug */,
+				F651E86D1686001000956961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F651E86E1686001000956961 /* Build configuration list for PBXNativeTarget "Apnchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F651E86F1686001000956961 /* Debug */,
+				F651E8701686001000956961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F651E8411686000F00956961 /* Project object */;
+}
