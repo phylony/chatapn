@@ -35,14 +35,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F651E84A1686001000956961 /* Apnchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apnchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F651E84A1686001000956961 /* ApnChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApnChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F651E84E1686001000956961 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F651E8501686001000956961 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F651E8521686001000956961 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F651E8561686001000956961 /* Apnchat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Apnchat-Info.plist"; sourceTree = "<group>"; };
+		F651E8561686001000956961 /* ApnChat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApnChat-Info.plist"; sourceTree = "<group>"; };
 		F651E8581686001000956961 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F651E85A1686001000956961 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F651E85C1686001000956961 /* Apnchat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Apnchat-Prefix.pch"; sourceTree = "<group>"; };
+		F651E85C1686001000956961 /* ApnChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApnChat-Prefix.pch"; sourceTree = "<group>"; };
 		F651E85D1686001000956961 /* ApnchatAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApnchatAppDelegate.h; sourceTree = "<group>"; };
 		F651E85E1686001000956961 /* ApnchatAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApnchatAppDelegate.m; sourceTree = "<group>"; };
 		F651E8601686001000956961 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		F651E84B1686001000956961 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F651E84A1686001000956961 /* Apnchat.app */,
+				F651E84A1686001000956961 /* ApnChat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,10 +148,10 @@
 		F651E8551686001000956961 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F651E8561686001000956961 /* Apnchat-Info.plist */,
+				F651E8561686001000956961 /* ApnChat-Info.plist */,
 				F651E8571686001000956961 /* InfoPlist.strings */,
 				F651E85A1686001000956961 /* main.m */,
-				F651E85C1686001000956961 /* Apnchat-Prefix.pch */,
+				F651E85C1686001000956961 /* ApnChat-Prefix.pch */,
 				F651E8601686001000956961 /* Default.png */,
 				F651E8621686001000956961 /* Default@2x.png */,
 				F651E8641686001000956961 /* Default-568h@2x.png */,
@@ -199,9 +199,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F651E8491686001000956961 /* Apnchat */ = {
+		F651E8491686001000956961 /* ApnChat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F651E86E1686001000956961 /* Build configuration list for PBXNativeTarget "Apnchat" */;
+			buildConfigurationList = F651E86E1686001000956961 /* Build configuration list for PBXNativeTarget "ApnChat" */;
 			buildPhases = (
 				F651E8461686001000956961 /* Sources */,
 				F651E8471686001000956961 /* Frameworks */,
@@ -211,9 +211,9 @@
 			);
 			dependencies = (
 			);
-			name = Apnchat;
+			name = ApnChat;
 			productName = Apnchat;
-			productReference = F651E84A1686001000956961 /* Apnchat.app */;
+			productReference = F651E84A1686001000956961 /* ApnChat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -226,7 +226,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = phylony;
 			};
-			buildConfigurationList = F651E8441686000F00956961 /* Build configuration list for PBXProject "Apnchat" */;
+			buildConfigurationList = F651E8441686000F00956961 /* Build configuration list for PBXProject "ApnChat" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -238,7 +238,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F651E8491686001000956961 /* Apnchat */,
+				F651E8491686001000956961 /* ApnChat */,
 			);
 		};
 /* End PBXProject section */
@@ -354,9 +354,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Apnchat/Apnchat-Prefix.pch";
-				INFOPLIST_FILE = "Apnchat/Apnchat-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Apnchat/ApnChat-Prefix.pch";
+				INFOPLIST_FILE = "Apnchat/ApnChat-Info.plist";
+				PRODUCT_NAME = ApnChat;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -365,9 +365,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Apnchat/Apnchat-Prefix.pch";
-				INFOPLIST_FILE = "Apnchat/Apnchat-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Apnchat/ApnChat-Prefix.pch";
+				INFOPLIST_FILE = "Apnchat/ApnChat-Info.plist";
+				PRODUCT_NAME = ApnChat;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -375,7 +375,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F651E8441686000F00956961 /* Build configuration list for PBXProject "Apnchat" */ = {
+		F651E8441686000F00956961 /* Build configuration list for PBXProject "ApnChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F651E86C1686001000956961 /* Debug */,
@@ -384,13 +384,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F651E86E1686001000956961 /* Build configuration list for PBXNativeTarget "Apnchat" */ = {
+		F651E86E1686001000956961 /* Build configuration list for PBXNativeTarget "ApnChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F651E86F1686001000956961 /* Debug */,
 				F651E8701686001000956961 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

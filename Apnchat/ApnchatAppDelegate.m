@@ -10,6 +10,8 @@
 
 #import "ApnchatViewController.h"
 
+#import "ASIFormDataRequest.h"
+
 @implementation ApnchatAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -19,8 +21,67 @@
     self.viewController = [[ApnchatViewController alloc] initWithNibName:@"ApnchatViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    [application registerForRemoteNotificationTypes:
+     UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound];
+    NSLog(@"%@",[self udid]);
+
     return YES;
 }
+-(NSString*)udid{
+    UIDevice *device=[UIDevice   currentDevice];
+    return [[device.identifierForVendor UUIDString] stringByReplacingOccurrencesOfString:@"-" withString:@""];
+}
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    application.applicationIconBadgeNumber = 0;
+    
+    // We can determine whether an application is launched as a result of the user tapping the action
+    // button or whether the notification was delivered to the already-running application by examining
+    // the application state.
+    NSLog(@"%@",[self udid]);
+    
+    if (application.applicationState == UIApplicationStateActive) {
+        // Nothing to do if applicationState is Inactive, the iOS already displayed an alert view.
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Did receive a Remote Notification"
+                                                            message:[NSString stringWithFormat:@"The application received this remote notification while it was running:\n%@",
+                                                                     [[userInfo objectForKey:@"aps"] objectForKey:@"alert"]]
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+        [alertView show];
+    }
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // You can send here, for example, an asynchronous HTTP request to your web-server to store this deviceToken remotely.
+    NSString *string=[deviceToken description];
+    string  =[string stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
+    string  =[string stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSLog(@"Did register for remote notifications: %@", string);
+    ASIFormDataRequest *request=[ASIFormDataRequest requestWithURL:[NSURL URLWithString:@"http://www.uknown.net/ApnChat/api/api.php"]];
+    [request setDelegate:self];
+    [request setPostValue:@"join" forKey:@"cmd"];
+    [request setPostValue:[self udid] forKey:@"udid"];
+    [request setPostValue:string forKey:@"token"];
+    [request setPostValue:@"AugCg" forKey:@"name"];
+    [request setPostValue:@"12345" forKey:@"code"];
+    [request setCompletionBlock:^{
+        if (request.responseStatusCode!=200) {
+            NSLog(@"Error");
+        }else{
+            NSLog(@"Joinder");
+        }
+    }];
+    [request setFailedBlock:^{
+        NSLog(@"Failed");
+    }];
+    [request startAsynchronous];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"Fail to register for remote notifications: %@", error);
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
